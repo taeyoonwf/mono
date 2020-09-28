@@ -82,6 +82,7 @@ Mono_Posix_Syscall_writev (int dirfd, struct Mono_Posix_Iovec *iov, gint32 iovcn
 }
 #endif /* def HAVE_WRITEV */
 
+/* 
 #ifdef HAVE_PREADV
 gint64
 Mono_Posix_Syscall_preadv (int dirfd, struct Mono_Posix_Iovec *iov, gint32 iovcnt, gint64 off)
@@ -100,8 +101,8 @@ Mono_Posix_Syscall_preadv (int dirfd, struct Mono_Posix_Iovec *iov, gint32 iovcn
 	free (v);
 	return res;
 }
-#endif /* def HAVE_PREADV */
-
+#endif*/ /* def HAVE_PREADV */
+/*
 #ifdef HAVE_PWRITEV
 gint64
 Mono_Posix_Syscall_pwritev (int dirfd, struct Mono_Posix_Iovec *iov, gint32 iovcnt, gint64 off)
@@ -120,7 +121,7 @@ Mono_Posix_Syscall_pwritev (int dirfd, struct Mono_Posix_Iovec *iov, gint32 iovc
 	free (v);
 	return res;
 }
-#endif /* def HAVE_PWRITEV */
+#endif */ /* def HAVE_PWRITEV */
 
 
 /*
